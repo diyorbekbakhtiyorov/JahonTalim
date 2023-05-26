@@ -1,0 +1,28 @@
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.Logo img {
+  width: 250px;
+}
+.PageLinks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.PageLinks a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s ease;
+  font-weight: 700;
+}
+.PageLinks a:hover {
+  color: #c6003f;
+}
+
+.PageLinks a.active {
+  color: #c6003f;
+}
