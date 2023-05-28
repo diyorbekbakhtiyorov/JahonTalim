@@ -13,7 +13,6 @@ function NavBar() {
           </div>
           <div className="PageLinks">
             <NavLink to={"/"}>Main</NavLink>
-            <NavLink to={"/contact"}>Contact</NavLink>
             <NavLink to={"/aboutus"}>About Us</NavLink>
           </div>
         </div>

@@ -1,11 +1,12 @@
 import React from "react";
-import "../../Styles/Header.css";
-import Image from "../../Images/JahonTalim.png";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import Image from "../../Images/JahonTalim.png";
+import "../../Styles/About.css";
 
-const Header = () => {
+function AboutHeader() {
+  
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -98,18 +99,8 @@ const Header = () => {
           detectRetina: true,
         }}
       />
-      <div className="container">
-        <div className="flex_wrap">
-          <div className="wrap">
-            <h1 className="capital_word">Jahon Ta'lim</h1>
-            <h3 className="description">Koinotlarni biz bilan zapt eting</h3>
-          </div>
-          <div className="wrap2">
-            <img src={Image} width={400} height={400} alt="" />
-          </div>
-        </div>
-      </div>
     </>
   );
-};
-export default Header;
+}
+
+export default AboutHeader;
