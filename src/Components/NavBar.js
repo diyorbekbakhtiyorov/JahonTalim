@@ -11,10 +11,6 @@ function NavBar() {
           <div className="Logo">
             <img src={NavLogo} alt="JahonTa'lim" />
           </div>
-          <div className="PageLinks">
-            <NavLink to={"/"}>Main</NavLink>
-            <NavLink to={"/aboutus"}>About Us</NavLink>
-          </div>
         </div>
       </div>
     </div>
