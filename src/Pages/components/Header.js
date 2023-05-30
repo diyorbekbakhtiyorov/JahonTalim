@@ -2,7 +2,6 @@ import React from "react";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import Image from "../../Images/JahonTalim.png";
 import "../../Styles/About.css";
 
 function AboutHeader() {

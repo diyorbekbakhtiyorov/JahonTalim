@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Styles/Header.css";
 import Image from "../../Images/JahonTalim.png";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Header = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -13,6 +15,10 @@ const Header = () => {
     // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  }, [])
 
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
@@ -100,8 +106,11 @@ const Header = () => {
       />
       <div className="container">
         <div className="flex_wrap">
-          <div className="wrap">
-            <h1 className="capital_word">Jahon Ta'lim</h1>
+          <div className="wrap" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+            <h1 className="capital_word" >Jahon Ta'lim</h1>
             <h3 className="description">Koinotlarni biz bilan zapt eting</h3>
           </div>
           <div className="wrap2">
