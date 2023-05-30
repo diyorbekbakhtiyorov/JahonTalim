@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Main from "./Pages/Main";
-import AboutUs from "./Pages/AboutUs";
 import "./Styles/App.css";
 import NavBar from "./Components/NavBar";
+import AbouFooter from "./Pages/components/Footer";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="aboutus" element={<AboutUs />} />
       </Routes>
+      <AbouFooter />
     </div>
   );
 }

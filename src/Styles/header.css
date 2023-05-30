@@ -1,7 +1,8 @@
 .container {
   width: 100%;
   color: #c6003f;
-  padding: 100px;
+  padding: 0 50px;
+  margin-top: 100px;
   /* background-color: #c6003f; */
 }
 
@@ -37,4 +38,12 @@
 #tsparticles {
   position: absolute !important;
   z-index: -1;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
 }
