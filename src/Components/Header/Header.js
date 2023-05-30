@@ -106,10 +106,7 @@ const Header = () => {
       />
       <div className="container">
         <div className="flex_wrap">
-          <div className="wrap" data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="300"
-            data-aos-offset="0">
+          <div className="wrap" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
             <h1 className="capital_word" >Jahon Ta'lim</h1>
             <h3 className="description">Koinotlarni biz bilan zapt eting</h3>
           </div>
